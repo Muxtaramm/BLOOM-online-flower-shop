@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BLOOM </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="#7cc06a" stroke="#0e1a0e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 4C10 4 4 9 4 16c0 1.5.3 2.8.8 4C6 18 8 16 11 15c-2 2-3.500 4-4.200 6 8 1 13-5 13-17z"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <strong> Bloom</strong>
+          <em>Nafislik har bir yaproqda.</em>
+        </span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Menyuni ochish">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active">Bosh sahifa <i class="dot"></i></a>
+
+      <div class="has-sub">
+  <a href="catalog.html#guldastalar" class="nav-link">Katalog
+    <svg class="chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+  </a>
+  <div class="submenu">
+  <a href="catalog.html">Guldastalar</a>
+  <a href="others.html">Boshqalar</a>
+</div>
+</div>
+
+        <div class="has-sub">
+          <a href="crafts.html" class="nav-link">Bezaklar
+            <svg class="chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="submenu">
+            <!-- <a href="crafts.html">Shamlar</a> -->
+            <a href="crafts.html">Gulchambarlar</a>
+          </div>
+        </div>
+
+       <a href="aboutUs.html" class="nav-link">Biz haqimizda</a>
+       <a href="#" class="nav-link" id="open-contact">Aloqa</a>
+      </nav>
+
+      <div class="actions">
+        <button id="open-search" class="icon-btn" aria-label="Qidirish">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.500-3.500"/></svg>
+        </button>
+        <button class="icon-btn heart" aria-label="Sevimlilar">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20s-7-4.500-9-9.200C1.800 7.500 4 4.500 7 4.500c2 0 3.500 1.200 5 3 1.500-1.800 3-3 5-3 3 0 5.200 3 4 6.300C19 15.500 12 20 12 20z"/></svg>
+        </button>
+        <button class="icon-btn cart" aria-label="Savat">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M5 7h14l-1 13H6L5 7z"/><path d="M9 7a3 3 0 016 0"/></svg>
+          <span class="badge" id="cart-count">3</span>
+        </button>
+        <a href="catalog.html" class="btn btn-green btn-sm">Buyurtma berish</a>
+      </div>
+
+    </div>
+        </div>
+
+  
+  </header>
+
+
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+
+    <!-- Fon rasmlari: har 2 soniyada almashadi -->
+    <div class="slides">
+      <div class="slide" style="background-image:url('images/hero1.jpg')"></div>
+      <div class="slide" style="background-image:url('images/hero2.jpg')"></div>
+      <div class="slide" style="background-image:url('images/hero3.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <button class="arrow arrow-left" id="prev" aria-label="Oldingi">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <button class="arrow arrow-right" id="next" aria-label="Keyingi">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+
+    <div class="hero-content">
+      <span class="tag"><b>✦</b> Qalblarga quvonch ulashuvchi gullar.</span>
+      <h1 style="font-size:72px;">Gullar bilan hayotingizga <br> rang bag‘ishlaymiz.</h1>
+      <p class="hero-sub">Gullar tabiatning mehr bilan yaratgan eng go‘zal va nozik mo‘jizasidir.</p>
+
+      <div class="hero-btns">
+    <a href="#kolleksiyalar" class="btn btn-green">Hammasini ko'rish
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <!-- <a href="about.html" class="btn btn-outline">Hikoyamiz</a> -->
+      </div>
+    </div>
+      <!-- ===== ALOQA OYNASI ===== -->
+  <div class="modal" id="contact-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="close-contact" aria-label="Yopish">✕</button>
+
+      <h3>Biz bilan bog'laning</h3>
+      <p class="modal-sub">Formani to'ldiring, tez orada siz bilan bog'lanamiz.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Ismingiz</label>
+          <input type="text" id="name" name="name" placeholder="Ismingizni kiriting">
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Telefon raqam</label>
+          <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67">
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Xabaringiz</label>
+          <textarea id="message" name="message" rows="4" placeholder="Xabaringizni yozing..."></textarea>
+          <small class="error"></small>
+        </div>
+
+        <button type="submit" class="btn btn-green">Yuborish</button>
+        <p class="form-success" id="form-success">✓ Rahmat! Xabaringiz yuborildi.</p>
+      </form>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+  
+
+    <!-- ===== ASSORTIMENT ===== -->
+  <section class="assort" id="kolleksiyalar">
+    <div class="container">
+
+      <div class="section-head light">
+        <span class="eyebrow">✦ Gullar olami ✦</span>
+        <h2>Bloom do‘koni assortimenti</h2>
+      </div>
+
+      <div class="assort-grid">
+        <a href="catalog.html#atirgul" class="assort-card">
+          <div class="assort-img"><img src="images/atirgul.jpg" alt="Atirgullar"></div>
+          <h3>Atirgullar</h3><p>8 xil tur</p>
+        </a>
+        <a href="catalog.html#lola" class="assort-card">
+          <div class="assort-img"><img src="images/lola.jpg" alt="Lolalar"></div>
+          <h3>Lolalar</h3><p>5 xil tur</p>
+        </a>
+        <a href="catalog.html#pion" class="assort-card">
+          <div class="assort-img"><img src="images/pion.jpg" alt="Pionlar"></div>
+          <h3>Pionlar</h3><p>7 xil tur</p>
+        </a>
+        <a href="catalog.html#liliya" class="assort-card">
+          <div class="assort-img"><img src="images/liliya.jpg" alt="Liliyalar"></div>
+          <h3>Liliyalar</h3><p>5 xil tur</p>
+        </a>
+        <a href="catalog.html#kungaboqar" class="assort-card">
+          <div class="assort-img"><img src="images/kungaboqar.jpg" alt="Kungaboqar"></div>
+          <h3>Kungaboqar</h3><p>2 xil tur</p>
+        </a>
+        <a href="catalog.html#orxideya" class="assort-card">
+          <div class="assort-img"><img src="images/orxideya.jpg" alt="Orxideyalar"></div>
+          <h3>Orxideyalar</h3><p>3 xil tur</p>
+        </a>
+        <a href="catalog.html#xrizantema" class="assort-card">
+          <div class="assort-img"><img src="images/xrizantema.jpg" alt="Xrizantemalar"></div>
+          <h3>Xrizantemalar</h3><p>4 xil tur</p>
+        </a>
+        <a href="crafts.html" class="assort-card">
+          <div class="assort-img"><img src="images/gulchambar.jpg" alt="Gulchambarlar"></div>
+          <h3>Gulchambarlar</h3><p>5 xil tur</p>
+        </a>
+        <a href="others.html" class="assort-card">
+          <div class="assort-img"><img src="images/idish9.jpg" alt="Vazalar va idishlar"></div>
+          <h3>Vazalar va idishlar</h3><p>10 xil tur</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+   
+
+  <!-- ===== ALOQA OYNASI ===== -->
+  <div class="modal" id="contact-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="close-contact" aria-label="Yopish">✕</button>
+
+      <h3>Biz bilan bog'laning</h3>
+      <p class="modal-sub">Formani to'ldiring, tez orada siz bilan bog'lanamiz.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Ismingiz</label>
+          <input type="text" id="name" name="name" placeholder="Ismingizni kiriting">
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Telefon raqam</label>
+          <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67">
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Xabaringiz</label>
+          <textarea id="message" name="message" rows="4" placeholder="Xabaringizni yozing..."></textarea>
+          <small class="error"></small>
+        </div>
+
+        <button type="submit" class="btn btn-green">Yuborish</button>
+        <p class="form-success" id="form-success">✓ Rahmat! Xabaringiz yuborildi.</p>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="ft">
+    <div class="ft-inner">
+
+      <div class="ft-col ft-brand">
+        <a href="index.html" class="ft-logo">
+          <span class="logo-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="#7cc06a" stroke="#0e1a0e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 4C10 4 4 9 4 16c0 1.5.3 2.8.8 4C6 18 8 16 11 15c-2 2-3.500 4-4.200 6 8 1 13-5 13-17z"/>
+            </svg>
+          </span>
+          <span class="ft-logo-text">
+            <strong>Bloom</strong>
+            <em>Nafislik har bir yaproqda.</em>
+          </span>
+        </a>
+        <p>Bloom online gul do‘koni: har bir lahzaga go‘zallik, har bir qalbga quvonch ulashadi.</p>
+
+        <div class="ft-social">
+          <a href="#" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M21 4L3 11l6 2.500L11.500 20l3-4.500L19 19z"/><path d="M9 13.500L21 4"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="ft-col">
+        <h4>Katalog</h4>
+        <ul>
+          <li><a href="catalog.html">Guldastalar</a></li>
+          <li><a href="crafts.html">Gulchambarlar</a></li>
+          <li><a href="others.html">Vazalar va idishlar</a></li>
+          <li><a href="catalog.html#atirgul">Atirgullar</a></li>
+          <li><a href="catalog.html#lola">Lolalar</a></li>
+          <li><a href="catalog.html#pion">Pionlar</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h4>Sahifalar</h4>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="aboutUs.html">Biz haqimizda</a></li>
+          <li><a href="#" data-open-contact>Aloqa</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h4>Aloqa</h4>
+        <ul class="ft-contact">
+          <li><span>📍</span> Namangan shaxar Alisher Navoiy ko'chasi 8-uy</li>
+          <li><span>📞</span> <a href="tel:+998901234567">+998 90 123 45 67</a></li>
+          <li><span>✉️</span> <a href="mailto:info@bloom.uz">Official@bloom.uz</a></li>
+          <li><span>🕘</span> Har kuni 09:00 – 21:00</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="ft-bottom">
+      <p>© <span data-year>2026</span> Bloom. Barcha huquqlar himoyalangan.</p>
+      <p class="ft-note">✦ Gullar bilan hayotingizga rang bag‘ishlaymiz</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  
+
+   <script src="app.js"></script>
+<script src="order.js"></script>
+<script src="search.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>
